@@ -15,17 +15,17 @@ your expensive computations.
 ## Installation
 
 ```bash
-npm install bear-cache
+npm install @bear-cache/core
 # or
-yarn add bear-cache
+yarn add @bear-cache/core
 # or
-bun add bear-cache
+bun add @bear-cache/core
 ```
 
 ## Basic Usage
 
 ```typescript
-import { Cache } from 'bear-cache'
+import { Cache } from '@bear-cache/core'
 
 // Create a cache with a factory function
 const cache = new Cache((key: string) => `Computed value for ${key}`)
@@ -42,7 +42,7 @@ const cachedValue = cache.get('myKey') // "Computed value for myKey"
 ### Caching API Requests
 
 ```typescript
-import { Cache } from 'bear-cache'
+import { Cache } from '@bear-cache/core'
 
 interface User {
   id: string
@@ -69,7 +69,7 @@ const sameUser = await userCache.get('123') // Fast! 🐻💨
 ### Caching File Operations
 
 ```typescript
-import { Cache } from 'bear-cache'
+import { Cache } from '@bear-cache/core'
 import { readFileSync } from 'fs'
 
 const fileCache = new Cache((filePath: string) => {
@@ -86,7 +86,7 @@ const sameContent = fileCache.get('./config.json')
 ### Caching Expensive Computations
 
 ```typescript
-import { Cache } from 'bear-cache'
+import { Cache } from '@bear-cache/core'
 
 const fibonacciCache = new Cache((n: number): number => {
   if (n <= 1) {
