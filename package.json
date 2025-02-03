@@ -2,6 +2,9 @@
   "name": "bear-cache",
   "module": "src/index.ts",
   "type": "module",
+  "version": "1.0.0",
+  "description": "A lightweight, type-safe LRU cache implementation for TypeScript that hibernates your expensive computations. 🐻",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "test": "vitest"
