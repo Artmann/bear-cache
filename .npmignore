@@ -1,0 +1,13 @@
+.github/
+node_modules/
+sample-files/
+src/
+tests/
+
+.prettierrc
+.prettierignore
+tsconfig.json
+vitest.config.ts
+
+*.test.ts
+*.log
