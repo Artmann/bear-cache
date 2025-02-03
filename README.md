@@ -15,11 +15,11 @@ your expensive computations.
 ## Installation
 
 ```bash
-npm install bear-cache
+npm install @bear-cache/core
 # or
-yarn add bear-cache
+yarn add @bear-cache/core
 # or
-bun add bear-cache
+bun add @bear-cache/core
 ```
 
 ## Basic Usage

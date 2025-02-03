@@ -1,7 +1,10 @@
 {
-  "name": "bear-cache",
+  "name": "@bear-cache/core",
   "type": "module",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A lightweight, type-safe LRU cache implementation for TypeScript that hibernates your expensive computations. 🐻",
   "author": "Christoffer Artmann <artgaard@gmail.com>",
   "license": "MIT",
@@ -33,10 +36,17 @@
     "type": "git",
     "url": "git+https://github.com/artmann/bear-cache.git"
   },
+  "bugs": {
+    "url": "https://github.com/artmann/bear-cache/issues"
+  },
+  "homepage": "https://github.com/artmann/bear-cache#readme",
   "engines": {
     "node": ">=14"
   },
   "dependencies": {},
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "devDependencies": {
     "@faker-js/faker": "^9.4.0",
     "@types/bun": "latest",
@@ -45,8 +55,5 @@
     "tsup": "^8.3.6",
     "uuid": "^11.0.5",
     "vitest": "^3.0.4"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
   }
 }
