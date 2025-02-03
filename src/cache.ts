@@ -15,7 +15,10 @@ export class Cache<K, V> {
   private readonly items: Map<K, V> = new Map()
   private keyAccessOrder: K[] = []
 
-  constructor(factoryFunction: FactoryFunction<K, V>, cacheOptions: Partial<CacheOptions> = {}) {
+  constructor(
+    factoryFunction: FactoryFunction<K, V>,
+    cacheOptions: Partial<CacheOptions> = {}
+  ) {
     this.factoryFunction = factoryFunction
     this.cacheOptions = {
       ...defaultCacheOptions,

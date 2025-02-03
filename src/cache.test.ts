@@ -77,10 +77,13 @@ describe('Cache', () => {
     })
 
     it('evicts the least recently used item when the cache is full.', () => {
-      const cache = new Cache((key: string) => ({
-        id: key.toLowerCase(),
-        name: key
-      }), { maxSize: 3 })
+      const cache = new Cache(
+        (key: string) => ({
+          id: key.toLowerCase(),
+          name: key
+        }),
+        { maxSize: 3 }
+      )
 
       cache.get('John')
       cache.get('Marry')
@@ -93,10 +96,13 @@ describe('Cache', () => {
     })
 
     it('updates the key access order when a key is accessed.', () => {
-      const cache = new Cache((key: string) => ({
-        id: key.toLowerCase(),
-        name: key
-      }), { maxSize: 3 })
+      const cache = new Cache(
+        (key: string) => ({
+          id: key.toLowerCase(),
+          name: key
+        }),
+        { maxSize: 3 }
+      )
 
       cache.get('John')
       cache.get('Marry')
