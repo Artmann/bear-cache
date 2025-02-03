@@ -5,6 +5,15 @@
   "version": "1.0.0",
   "description": "A lightweight, type-safe LRU cache implementation for TypeScript that hibernates your expensive computations. 🐻",
   "license": "MIT",
+  "keywords": [
+    "bun",
+    "cache",
+    "caffeine",
+    "hibernation",
+    "lru",
+    "memoization",
+    "typescript"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest"
